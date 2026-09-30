@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<meta name="description" content="Prototype de tableau de bord régional : besoins de santé, offre de soins et flux de patients en Bourgogne-Franche-Comté. Données fictives.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<title>Tableau de bord régional BFC · prototype</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="fictif" role="note"><strong>Données fictives.</strong> Prototype de démonstration : aucun chiffre affiché n'est réel. Les sources citées sont celles à brancher en V1.</div>
+
+<header class="tete">
+  <h1>Besoins, offre et flux de patients en Bourgogne-Franche-Comté</h1>
+  <p>Support de travail du séminaire FHF BFC sur les trois axes : permanence des soins, filières, prévention. Maille provisoire : département, en attendant la validation du découpage par GHT.</p>
+</header>
+
+<nav class="filtres" aria-label="Filtres et écrans">
+  <div class="filtres-in">
+    <div class="filtre"><label for="f-terr">Territoire</label><select id="f-terr"></select></div>
+    <div class="filtre"><label for="f-fil">Filière</label><select id="f-fil"></select></div>
+    <div class="filtre"><label for="f-an">Année</label><select id="f-an"></select></div>
+    <div class="onglets" role="tablist">
+      <button role="tab" data-e="carte" aria-selected="true">Carte du territoire</button>
+      <button role="tab" data-e="flux">Flux de patients</button>
+      <button role="tab" data-e="coop">Coopérations</button>
+      <button role="tab" data-e="mat">Maturité</button>
+      <button role="tab" data-e="ref">Sources et indicateurs</button>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <!-- ÉCRAN 1 -->
+  <section class="ecran actif" id="e-carte" role="tabpanel">
+    <div class="ecran-tete"><div><h2>Carte du territoire</h2><p class="question">Où les besoins de santé sont-ils les plus forts, et l'offre suit-elle ?</p></div></div>
+    <div class="grille">
+      <div class="panneau">
+        <div class="carte-outils">
+          <div class="pastilles" id="p-ind" role="group" aria-label="Indicateur de fond de carte"></div>
+          <label class="bascule"><input type="checkbox" id="c-zones" checked> Zones sous-denses</label>
+        </div>
+        <svg id="carte" viewBox="0 0 560 420" role="img" aria-label="Carte schématique des 8 départements de Bourgogne-Franche-Comté"></svg>
+        <div class="legende" id="leg"></div>
+        <p class="note">Carte schématique : la position des départements est respectée, pas leur contour. Le fond cartographique IGN sera intégré en V1.</p>
+      </div>
+      <div class="panneau fiche" id="fiche"></div>
+    </div>
+  </section>
+
+  <!-- ÉCRAN 2 -->
+  <section class="ecran" id="e-flux" role="tabpanel">
+    <div class="ecran-tete"><div><h2>Flux de patients</h2><p class="question">Où partent les patients du territoire pour cette filière ?</p></div><span class="propo">Maille GHT vers GHT à vérifier dans ScanSanté</span></div>
+    <div class="grille">
+      <div class="panneau"><h3 id="flux-titre"></h3><svg id="sankey" viewBox="0 0 680 380" role="img"></svg>
+        <p class="note">ScanSanté et Hospi Diag publient des taux de fuite et d'attractivité par zone. Une matrice origine-destination complète entre GHT reste à confirmer. Sans elle, ce diagramme sera remplacé par des barres empilées.</p></div>
+      <div class="panneau"><h3>Comparaison régionale</h3><div class="defil"><table id="t-flux"></table></div></div>
+    </div>
+  </section>
+
+  <!-- ÉCRAN 3 -->
+  <section class="ecran" id="e-coop" role="tabpanel">
+    <div class="ecran-tete"><div><h2>Suivi des coopérations</h2><p class="question">Quels territoires partagent les mêmes fragilités, et où une coopération entre voisins a-t-elle du sens ?</p></div><span class="propo">Écran proposé par le CIUS, à valider</span></div>
+    <div class="kpis" id="kpis"></div>
+    <div class="panneau"><h3>Position de chaque territoire par rapport à la médiane régionale</h3>
+      <div class="defil"><table id="t-coop"></table></div>
+      <p class="note">Vert : plus favorable que la médiane régionale. Beige : proche de la médiane (écart inférieur à 5 %). Rouge : moins favorable.</p></div>
+  </section>
+
+  <!-- ÉCRAN 4 -->
+  <section class="ecran" id="e-mat" role="tabpanel">
+    <div class="ecran-tete"><div><h2>Maturité par axe</h2><p class="question">Où en est chaque territoire sur les trois axes du séminaire ?</p></div><span class="propo">Échelle du déroulé 2026 non transmise</span></div>
+    <div class="grille">
+      <div class="panneau"><h3>Positionnement de 1 à 5</h3><div id="mat"></div>
+        <p class="note">Les positionnements seront renseignés par chaque GHT, puis discutés en séminaire. Le mode de renseignement reste à définir avec la FHF BFC.</p></div>
+      <div class="panneau"><h3>Lecture régionale</h3><div id="mat-synth"></div></div>
+    </div>
+  </section>
+
+  <!-- ÉCRAN 5 -->
+  <section class="ecran" id="e-ref" role="tabpanel">
+    <div class="ecran-tete"><div><h2>Sources et indicateurs</h2><p class="question">Ce qui est disponible, ce qui doit être demandé, ce qui doit être produit.</p></div></div>
+    <div class="grille">
+      <div class="panneau"><div class="defil"><table id="t-ref"></table></div></div>
+      <div class="panneau"><h3>Points à valider avec la FHF BFC</h3>
+        <ol class="points">
+          <li>Date du séminaire. Elle fixe le périmètre réaliste de la V1.</li>
+          <li>Le référentiel des 7 domaines de filières. La liste affichée ici est provisoire.</li>
+          <li>L'échelle de maturité du déroulé 2026 et la personne qui renseigne les positionnements.</li>
+          <li>Le découpage de référence : GHT, zones de proximité ARS ou départements.</li>
+          <li>Les conditions d'accès à Soins et territoires (ATIH) et aux données du RUBFC.</li>
+          <li>La capacité des GHT à remonter leurs délais de rendez-vous. La V1 est conçue sans cet indicateur.</li>
+          <li>Le mode de diffusion : usage interne au séminaire ou publication.</li>
+          <li>La charte graphique : CIUS, FHF BFC ou co-branding.</li>
+        </ol>
+        <h3 style="margin-top:18px">Données et conformité</h3>
+        <p class="note" style="margin-top:0">L'outil n'affiche que des données agrégées. Les petits effectifs seront masqués selon les règles de chaque producteur. Les remontées des GHT et les données du RUBFC devront faire l'objet d'une analyse RGPD. L'hébergement HDS sera requis si des données de santé à caractère personnel transitent par l'outil.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>Prototype conçu par le CIUS pour la FHF Bourgogne-Franche-Comté. Toutes les valeurs sont générées pour la démonstration.</footer>
+
+<noscript><p style="padding:20px;max-width:1320px;margin:0 auto">Cet outil nécessite JavaScript. Activez-le dans votre navigateur pour afficher les écrans.</p></noscript>
+<script src="data/referentiel.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
