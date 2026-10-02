@@ -1,78 +1,39 @@
-# Tableau de bord régional BFC · prototype FHF
+# FHF Bourgogne-Franche-Comté — Tableau de bord V5
 
-Prototype de data visualisation conçu par le CIUS pour le séminaire de la FHF Bourgogne-Franche-Comté. Il croise besoins de santé, offre de soins et flux de patients, sur les trois axes du séminaire : permanence des soins, filières, prévention.
+Version du 2 octobre 2026, prête pour GitHub Pages. Site statique sans compilation, serveur de données ni bibliothèque externe. Les données sont intégrées dans `assets/data.js` ; les fichiers CSV/JSON sont disponibles dans `data/`.
 
-> **Toutes les données affichées sont fictives.** Elles sont générées dans le navigateur pour la démonstration. Aucun chiffre n'est réel.
+## Publier
 
-## Arborescence
+1. Décompresser l’archive.
+2. Déposer **son contenu** à la racine du dépôt : `index.html`, `assets/`, `data/`, `docs/`, `tests/`, `scripts/`, `README.md` et `.nojekyll`. Ne pas déposer uniquement le ZIP.
+3. Dans **Settings → Pages**, choisir **Deploy from a branch**, branche **main**, dossier **/(root)**, puis **Save**.
+4. Ouvrir le lien affiché par GitHub Pages après le déploiement.
 
-```
-fhf-bfc-dataviz/
-├── index.html                 Page de l'outil
-├── .nojekyll                  Désactive le traitement Jekyll de GitHub Pages
-├── README.md
-├── assets/
-│   ├── css/style.css          Mise en forme et polices
-│   ├── js/app.js              Logique des 5 écrans
-│   ├── fonts/                 IBM Plex Sans, auto-hébergée (licence SIL OFL)
-│   └── favicon.svg
-└── data/
-    └── referentiel.js         Territoires, filières, années, indicateurs, sources
-```
+Voir [le guide de publication](docs/PUBLICATION_GITHUB.md).
 
-Aucune dépendance, aucune compilation. L'outil n'appelle aucun service externe.
+## Explorer
 
-## Mise en ligne sur GitHub Pages
+- **Territoires & offre** : six indicateurs départementaux, croisements APL/pauvreté sur 3 685 communes, seuils modifiables, cartes, sélection et exports, offre SAE 2025 des 11 GHT sur 24 mesures.
+- **Flux** : structure et extraction à obtenir ; aucune matrice simulée.
+- **Coopérations & prévention** : passages aux urgences et dépistage du sein, en distinguant activité et coopération effective.
+- **Maturité** : grille des trois axes, 33 cellules non renseignées et modèle de collecte.
+- **Sources & qualité** : provenance, millésimes, contrôles, anomalies et besoins restant à couvrir.
 
-1. Créez un dépôt sur GitHub, par exemple `fhf-bfc-dataviz`.
-2. Déposez **le contenu** du dossier `fhf-bfc-dataviz/` à la racine du dépôt. `index.html` doit être à la racine, pas dans un sous-dossier.
-3. Vérifiez que le fichier `.nojekyll` est bien présent. L'interface web de GitHub masque parfois les fichiers commençant par un point : en cas de doute, créez-le avec « Add file », puis « Create new file », nommé `.nojekyll` et laissé vide.
-4. Ouvrez **Settings**, puis **Pages**.
-5. Dans **Source**, choisissez « Deploy from a branch », branche `main`, dossier `/ (root)`, puis **Save**.
-6. L'adresse `https://<compte>.github.io/fhf-bfc-dataviz/` s'affiche en haut de la page Pages une fois le déploiement terminé. Suivez l'avancement dans l'onglet **Actions**.
+La pauvreté est diffusée pour **198 communes**, couvrant **51,23 %** de la population 2022 utilisée dans le croisement. Les valeurs non diffusées restent vides. Les seuils APL 3 et pauvreté 15 % sont exploratoires et ne constituent pas un zonage ZIP/ZAC.
 
-Par la ligne de commande :
+## Limites à lire avant interprétation
 
-```bash
-cd fhf-bfc-dataviz
-git init
-git add .
-git commit -m "Prototype tableau de bord régional BFC"
-git branch -M main
-git remote add origin https://github.com/<compte>/fhf-bfc-dataviz.git
-git push -u origin main
+Aucun rattachement communal de résidence aux GHT n’est validé. Le GeoJSON GHT reste donc vide et les besoins ne sont pas agrégés par GHT. Les compositions FINESS 2026 et statistiques SAE 2025 restent deux périmètres datés distincts. Le GHT 21–52 inclut un périmètre hors BFC : les capacités ne sont pas divisées par une population départementale BFC.
+
+[Méthodologie](docs/METHODOLOGIE.md) · [Recherche et sources vérifiées](docs/SOURCES_VERIFIEES.md) · [Demandes aux producteurs](docs/DEMANDES_PRODUCTEURS.md) · [Changements V5](docs/CHANGEMENTS_V5.md) · [Licences](docs/LICENCES_ET_SOURCES.md).
+
+## Vérifier localement
+
+```sh
+python3 tests/check_data.py
+node --check assets/app.js
+node tests/check_interactions.mjs
+python3 -m http.server 8000
 ```
 
-## Consultation en local
-
-Double-cliquez sur `index.html`. L'outil fonctionne sans serveur.
-
-## Modifier le référentiel
-
-Tout se règle dans `data/referentiel.js` :
-
-- `TERR` : territoires affichés et leur position sur la carte schématique. Pour passer à la maille GHT, remplacez les 8 départements par la liste validée.
-- `FIL` : filières. Liste provisoire, à remplacer par le référentiel des 7 domaines.
-- `ANS` : années du filtre.
-- `IND`, `COOP` : indicateurs, unités, sens de lecture, source.
-- `REF`, `STAT` : tableau des sources et de leur statut.
-
-Les valeurs affichées sont produites par un générateur fictif dans `assets/js/app.js`. La V1 remplacera ce générateur par la lecture des exports open data.
-
-## Limites de la version actuelle
-
-- Maille provisoire : département.
-- Carte schématique : positions respectées, contours non représentés.
-- Écrans Coopérations et Maturité : propositions du CIUS, à valider par la FHF BFC.
-- Échelle de maturité sans libellés de niveaux, faute du déroulé 2026.
-
-## Visibilité et données
-
-- Sur un dépôt public, l'outil est accessible à toute personne qui a le lien. La balise `noindex` limite son référencement, sans le rendre privé.
-- GitHub Pages sur dépôt privé nécessite un abonnement GitHub payant, et le site publié reste public sauf offre Enterprise.
-- N'ajoutez jamais dans le dépôt de données patient, de remontées GHT ou de données RUBFC non agrégées. Pour des données de santé à caractère personnel, GitHub Pages ne convient pas : un hébergement certifié HDS est requis.
-
-## Crédits
-
-Conception : CIUS, Centre d'Innovation et d'Usages en Santé.
-Police : IBM Plex, © IBM Corp., licence SIL Open Font License 1.1 (`assets/fonts/LICENSE.txt`).
+Puis ouvrir `http://localhost:8000`. `index.html` peut également être ouvert directement ; conserver les dossiers voisins. Les contrôles JavaScript utilisent un DOM simulé. La vérification visuelle effectuée porte sur les SVG produits ; le rendu complet dans un navigateur réel reste à vérifier.

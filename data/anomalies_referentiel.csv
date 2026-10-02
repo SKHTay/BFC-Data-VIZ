@@ -1,0 +1,6 @@
+﻿objet;champ;valeur;anomalie;priorite
+BFC-11;typeGcc;002;"Code libellé GHT psychiatrique dans la nomenclature ; Haute-Saône classé ainsi dans FINESS+, alors que le support est GH70. Conserver le code et demander correction/explication à ANS/ARS.";P1
+BFC-07;composition;9;"Composition FINESS+ publiée plus restreinte que la liste ARS 2024. Comparer établissements sanitaires, ESMS parties/associés et fusions ; ne pas certifier l’exhaustivité.";P0
+BFC-09;composition;1;"Composition FINESS+ publiée plus restreinte que la liste ARS 2024. Comparer établissements sanitaires, ESMS parties/associés et fusions ; ne pas certifier l’exhaustivité.";P0
+BFC-11;composition;1;"Composition FINESS+ publiée plus restreinte que la liste ARS 2024. Comparer établissements sanitaires, ESMS parties/associés et fusions ; ne pas certifier l’exhaustivité.";P0
+BFC-12;composition;1;"Composition FINESS+ publiée plus restreinte que la liste ARS 2024. Comparer établissements sanitaires, ESMS parties/associés et fusions ; ne pas certifier l’exhaustivité.";P0

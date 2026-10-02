@@ -1,0 +1,19 @@
+{
+  "success": true,
+  "communes": 3685,
+  "ght": 11,
+  "mesures_offre": 24,
+  "faits_offre": 264,
+  "sites": 443,
+  "pauvrete_diffusee": 198,
+  "communes_cumul_3_15": 35,
+  "apl_region": 3.432890880168707,
+  "population_rp2023": 2802670,
+  "geometries_codes": "CONCORDANTS",
+  "non_testables": [
+    "partition_residence_GHT",
+    "population_GHT",
+    "public_MCO_exhaustif",
+    "parts_flux_100pct"
+  ]
+}

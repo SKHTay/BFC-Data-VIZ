@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "mode": "DOM simulé ; calculs et événements exécutés, pas de navigateur réel",
+  "onglets": 5,
+  "communes": 3685,
+  "mesures_offre": 24,
+  "periodes_depistage": 9,
+  "maturite_non_renseignee": 33,
+  "tests": [
+    "filtres",
+    "export CSV Dijon",
+    "valeurs non diffusées",
+    "sélection vide",
+    "seuil zéro",
+    "24 mesures offre",
+    "composition GHT",
+    "9 périodes dépistage",
+    "corrélation paires complètes",
+    "sources",
+    "réinitialisation"
+  ],
+  "largeurs_svg": [
+    650,
+    340
+  ]
+}

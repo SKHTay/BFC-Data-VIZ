@@ -1,0 +1,407 @@
+[
+  {
+    "fichier": ".nojekyll",
+    "octets": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "fichier": "README.md",
+    "octets": 2770,
+    "sha256": "a2c27b6603fbcbf758d12e1c0a28aab1b4b8e4ec8c0d9aecd63d26f9cbaea354"
+  },
+  {
+    "fichier": "assets/app.js",
+    "octets": 33692,
+    "sha256": "1a3d034f62793ac10e9c3ac6f6f77cf750a2915a9791a35364a2f910e202b27a"
+  },
+  {
+    "fichier": "assets/data.js",
+    "octets": 1570811,
+    "sha256": "7348ed6de09b90ec3d1bd42ba2b5227f793d0220c78706edbfc7a4a95d6921ca"
+  },
+  {
+    "fichier": "assets/schema.json",
+    "octets": 260,
+    "sha256": "a1e23a34eb4037af9807e7a8fb2240ef286e5859a775e40915a20558bdc4934f"
+  },
+  {
+    "fichier": "assets/style.css",
+    "octets": 9103,
+    "sha256": "5d31ca2c54d4391c1dc4cbd5e6b5a3c846fe5cf0b6bd7696bd7ed147a7d21487"
+  },
+  {
+    "fichier": "data/anomalies_referentiel.csv",
+    "octets": 1074,
+    "sha256": "5db97491d4a521dda20be46f3996a2aa0266923b32ee1cc4885b23d11566ce8b"
+  },
+  {
+    "fichier": "data/anomalies_referentiel.json",
+    "octets": 1314,
+    "sha256": "5c4796171f798c852397987f23d30a00859b335b543985759134fba705803783"
+  },
+  {
+    "fichier": "data/apl_evolution.csv",
+    "octets": 2169,
+    "sha256": "9cbffc9a65202cec7111d0293309f72e1fa375deff9a01ef169706e5f5afb601"
+  },
+  {
+    "fichier": "data/apl_evolution.json",
+    "octets": 4579,
+    "sha256": "bf47bba4f9f6a4bc85fae89583d4680caaa26b570f02077cf1f6e659115f6455"
+  },
+  {
+    "fichier": "data/contours_communes.geojson",
+    "octets": 2938915,
+    "sha256": "877e34c2e0dedc8aadec8800eee8a1d2186e67757747b8ee49e47e118b3e76fc"
+  },
+  {
+    "fichier": "data/contours_departements.geojson",
+    "octets": 120241,
+    "sha256": "a09fa52c96a48294291dfabe22a8926a16dbd102c7a26019b9d6ca1850078ffa"
+  },
+  {
+    "fichier": "data/contours_ght.geojson",
+    "octets": 161,
+    "sha256": "726b7f8a16e78ec7ee5d177afa76a517ebe7991de5e69df822b8c9426bf473d9"
+  },
+  {
+    "fichier": "data/croisement_communes.csv",
+    "octets": 448639,
+    "sha256": "3368195fad2b546622feac0d762898d5390d472dc08cbc82d7ba65c8cff442cc"
+  },
+  {
+    "fichier": "data/croisement_communes.json",
+    "octets": 1231457,
+    "sha256": "23635486710c600d0ba3569fc94cee19cae8b9cb14714c81e17fc146afe11ff3"
+  },
+  {
+    "fichier": "data/croisement_departements.csv",
+    "octets": 1688,
+    "sha256": "0cf84ad7b4c9046e03cb68f01dcaa7f62d84c09c1b09630a2a0130055d85a903"
+  },
+  {
+    "fichier": "data/croisement_departements.json",
+    "octets": 3536,
+    "sha256": "df6b616d31a0f0b67eb33abd1a11b6f549588a16ccc8cc1a97837b091c1113fa"
+  },
+  {
+    "fichier": "data/depistage_sein.csv",
+    "octets": 3633,
+    "sha256": "537deb0281f43b23abbad825c8b51e4bf3bf042ac52305c632fe32f45ff5e117"
+  },
+  {
+    "fichier": "data/depistage_sein.json",
+    "octets": 8690,
+    "sha256": "b434e2b617f83080ef72f8f2eba7534cc566a3806585548ea985cfd49e245378"
+  },
+  {
+    "fichier": "data/diagnostic_croise_seuils.csv",
+    "octets": 2001,
+    "sha256": "e00a9fad1a9dc0d795910dd42dc5f6eee8731b24eba530aa70ae10a7295a855d"
+  },
+  {
+    "fichier": "data/diagnostic_croise_seuils.json",
+    "octets": 4363,
+    "sha256": "74434522a924d2eebd5617d86aaa2f61f92b50f00a2deebd30e111cf4d367772"
+  },
+  {
+    "fichier": "data/dictionnaire_donnees.csv",
+    "octets": 8202,
+    "sha256": "80e3d62326edc2644ef3d4e1017fa3386fba6178c3371f4bd07ccfaefdf0f9c4"
+  },
+  {
+    "fichier": "data/dictionnaire_donnees.json",
+    "octets": 12272,
+    "sha256": "17fc6fe3add94ae5b8ae7bb3e9a79df1fac9179ed26b74231b25cfe75fb71766"
+  },
+  {
+    "fichier": "data/fait_besoin.csv",
+    "octets": 86,
+    "sha256": "97f05688637bd993270a4d92590a0d6232fdffb04feb938b52a2cedb8f4fd2d5"
+  },
+  {
+    "fichier": "data/fait_besoin.json",
+    "octets": 2,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  {
+    "fichier": "data/fait_cooperation.csv",
+    "octets": 102,
+    "sha256": "692759c2344f1899f3501c3d2ce248a697fd5266f07d41a4ea7e71c57764ef99"
+  },
+  {
+    "fichier": "data/fait_cooperation.json",
+    "octets": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+  },
+  {
+    "fichier": "data/fait_flux.csv",
+    "octets": 84,
+    "sha256": "f55115ca6242f2a6c3b54f8df0e4e7bf87be31931a3a7c32876563f043183dcf"
+  },
+  {
+    "fichier": "data/fait_flux.json",
+    "octets": 2,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  {
+    "fichier": "data/fait_maturite.csv",
+    "octets": 60,
+    "sha256": "05811c82e0afc3ce9020b9fe1fe3d0da35f0671b2a01f618f08538b88fa393b5"
+  },
+  {
+    "fichier": "data/fait_maturite.json",
+    "octets": 2,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  {
+    "fichier": "data/fait_offre.csv",
+    "octets": 22124,
+    "sha256": "cb6f44c1ad32acad4bc4e18c5ecfad08b567cebb2e4ab4846532a951c61d8173"
+  },
+  {
+    "fichier": "data/fait_offre.json",
+    "octets": 47135,
+    "sha256": "59d470a051563d161354a80db0ed1d233817ea8696a09c01ad2d20dcf6d4a80f"
+  },
+  {
+    "fichier": "data/manques_actualises.csv",
+    "octets": 4301,
+    "sha256": "8206f52d56d5552d8a09b1d87115cf51a59b12c8d0b6be5dfb2952e6e5f9e2ae"
+  },
+  {
+    "fichier": "data/manques_actualises.json",
+    "octets": 5157,
+    "sha256": "79cdf9a02a61a007261753b8e80ec91e182ab522a066394cb0c705a455551d51"
+  },
+  {
+    "fichier": "data/modele_collecte_maturite.csv",
+    "octets": 1508,
+    "sha256": "b1b979b68e58e923ba60ca3f21b3b3c1c53642028752c830316e9d6af19549de"
+  },
+  {
+    "fichier": "data/modele_collecte_maturite.json",
+    "octets": 4610,
+    "sha256": "db666215e216a8fd2823e376d7834d459e8a3b57d0956c51ab07509198e32780"
+  },
+  {
+    "fichier": "data/offre_urgences.csv",
+    "octets": 6174,
+    "sha256": "a9d0fc6805178d182b87813d1563a4ec3bc7d9c855b3e1a19c34e362d68af27c"
+  },
+  {
+    "fichier": "data/offre_urgences.json",
+    "octets": 12032,
+    "sha256": "dfc1cc3526cba60941cc05d82567b2e39f7d4c1fd28026c94fdaeb614d45fad6"
+  },
+  {
+    "fichier": "data/pathologies_2024.csv",
+    "octets": 119672,
+    "sha256": "60006c0872e5a28b3fed748e90f45f286fc71217326d2af445cc2e1c3b63137d"
+  },
+  {
+    "fichier": "data/pathologies_2024.json",
+    "octets": 258652,
+    "sha256": "06ec2f109d5af9774418b6355deddc111776651f5090fc692a09f0fbf4ce1e80"
+  },
+  {
+    "fichier": "data/ref_codegeo_pmsi.csv",
+    "octets": 79,
+    "sha256": "fcf2807ea6d69075b7146b59cf3c80069f8e6ad4202fba67f07a7fd86ece86cb"
+  },
+  {
+    "fichier": "data/ref_codegeo_pmsi.json",
+    "octets": 2,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  {
+    "fichier": "data/ref_commune.csv",
+    "octets": 150186,
+    "sha256": "200a3ff2fe353b279db68b1eb228cd7e7004f3c9924b5edf3f9f796a41d31da4"
+  },
+  {
+    "fichier": "data/ref_commune.json",
+    "octets": 500192,
+    "sha256": "24bfee25025e064ad7e53d6416a090b14b29335c2188ca67a74b0ce3bb229e61"
+  },
+  {
+    "fichier": "data/ref_etablissement.csv",
+    "octets": 97291,
+    "sha256": "2340fa344e3b39a82ffb3c23f3991a454d743ca3220c2ed111bb2e4912845907"
+  },
+  {
+    "fichier": "data/ref_etablissement.json",
+    "octets": 175219,
+    "sha256": "17cb237eb16648e9b052b1f3dbe60021810558374c32e43781c09b92f50cdb02"
+  },
+  {
+    "fichier": "data/ref_filiere.csv",
+    "octets": 72,
+    "sha256": "7485117ef12713d3a88ceca3dc125ceb40e825a81a7020dc2d799d82444eaa2b"
+  },
+  {
+    "fichier": "data/ref_filiere.json",
+    "octets": 2,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  {
+    "fichier": "data/ref_ght.csv",
+    "octets": 2649,
+    "sha256": "8fdb204a8cd2f1aa1a3277c3dc535bbf9d46a4bbf8abdc7de86f4d55f0619e1d"
+  },
+  {
+    "fichier": "data/ref_ght.json",
+    "octets": 4493,
+    "sha256": "65860e6f9cb61d1597bbb62417a2ededc761d790d51e0e254796300629f8d09c"
+  },
+  {
+    "fichier": "data/ref_membres_finess.csv",
+    "octets": 5052,
+    "sha256": "0f3d23b0e002f1d0153dab0fcef7db4c48653354798ece10ca6fb7b17ce9f532"
+  },
+  {
+    "fichier": "data/ref_membres_finess.json",
+    "octets": 12848,
+    "sha256": "77aa6dc6d67ac6e30644b5243e3649ec0adf6e2c3d85004eb63870f02fc56c66"
+  },
+  {
+    "fichier": "data/ref_source.csv",
+    "octets": 19820,
+    "sha256": "5e23aa530652e8a9a610e9418ba7d533e2928d69f89b4c36e21a04738d0e8d4b"
+  },
+  {
+    "fichier": "data/ref_source.json",
+    "octets": 29436,
+    "sha256": "031b2be38310cc58452b1f1657b3cfb6c2f3cc7cc2208d8b5cdaa9a8165336b2"
+  },
+  {
+    "fichier": "data/referentiel.json",
+    "octets": 21496,
+    "sha256": "c17964b5c7992858b33b9f3baae6023d7e244ee0abd5269f4a5e759815109874"
+  },
+  {
+    "fichier": "docs/CHANGEMENTS_V5.md",
+    "octets": 1822,
+    "sha256": "4d7aebb9c21be93df39197e77099eb66dbf4bcb9684d7d7fa724e5a026b46b3c"
+  },
+  {
+    "fichier": "docs/DEMANDES_PRODUCTEURS.md",
+    "octets": 4537,
+    "sha256": "3c6accc0b9dd9b188c117da0f4e6c06597604ba3737b826893e01aff7790126a"
+  },
+  {
+    "fichier": "docs/LICENCES_ET_SOURCES.md",
+    "octets": 2246,
+    "sha256": "7566953c5769ecc6245c8d1223406e081aa3601226584643a37111e9e5d0949e"
+  },
+  {
+    "fichier": "docs/METHODOLOGIE.md",
+    "octets": 6939,
+    "sha256": "d386b863f56c3e6b78a1a1ab7a1a31ea60b465d24789887cd3a120d3e4257a16"
+  },
+  {
+    "fichier": "docs/PUBLICATION_GITHUB.md",
+    "octets": 2721,
+    "sha256": "2a9e2d9e2ea06e02b61ecbeb428de1bf6d6faad54bad1babfb66d176ef4105bf"
+  },
+  {
+    "fichier": "docs/SOURCES_VERIFIEES.md",
+    "octets": 7207,
+    "sha256": "f1ecd81526eddc0bb6119b7388028f312315fd96e2024bbbcc59099a7519000a"
+  },
+  {
+    "fichier": "index.html",
+    "octets": 15599,
+    "sha256": "95d91905192fe1a62cc3ab900c6d64bbc3d9b66b5a95cec15b198c35ee91340c"
+  },
+  {
+    "fichier": "scripts/synchroniser_donnees.py",
+    "octets": 1960,
+    "sha256": "237d368a93a1e8f467130ee0dcfb8fe19419c247fef2aa4be37d203c8f7419e7"
+  },
+  {
+    "fichier": "tests/check_data.py",
+    "octets": 3870,
+    "sha256": "2b983a8c74da6eb1f4e5bce35a860c8ac59d754a7a55196600d161198267276b"
+  },
+  {
+    "fichier": "tests/check_interactions.mjs",
+    "octets": 6621,
+    "sha256": "966fa4bd66ff479ed2bc50c89d1d0e6f9909292deffcf2021a460fdcd8d179cb"
+  },
+  {
+    "fichier": "tests/resultats_donnees.json",
+    "octets": 408,
+    "sha256": "f217e3f4c5404a37629a214a5693716e7ab523ad6ee589361a5a84b1354b00ac"
+  },
+  {
+    "fichier": "tests/resultats_interactions.json",
+    "octets": 553,
+    "sha256": "66e11d0748f10307f97ff6fb181ec0426a07076da6a8b3d3839d49a953ccae4b"
+  },
+  {
+    "fichier": "tests/resultats_livraison.json",
+    "octets": 1587,
+    "sha256": "cb7e0f0f114ed25c89b412c5a0839e9ed69bbb0b1e43d95a32999c1ee265e97a"
+  },
+  {
+    "fichier": "tests/svg/carte_340.svg",
+    "octets": 153207,
+    "sha256": "8b056ac56d3375e8ae5555e4a69f76205f3112f53024eb093b555c939e3fc568"
+  },
+  {
+    "fichier": "tests/svg/carte_650.svg",
+    "octets": 153207,
+    "sha256": "8b056ac56d3375e8ae5555e4a69f76205f3112f53024eb093b555c939e3fc568"
+  },
+  {
+    "fichier": "tests/svg/communes_340.svg",
+    "octets": 53636,
+    "sha256": "c436d706eda658cb49ee8aca4bb509f3aa95df1a24a6ba7f2510637a9619099b"
+  },
+  {
+    "fichier": "tests/svg/communes_650.svg",
+    "octets": 53734,
+    "sha256": "7263223386f2beea9fe93f6b6aa300ee410d4b23b74abe41c55350873542ecd4"
+  },
+  {
+    "fichier": "tests/svg/departements_340.svg",
+    "octets": 5259,
+    "sha256": "166998ecdf99755cae2cd9d6804dad4a7d2a9f55d89cc931c8c899d6edbf55a4"
+  },
+  {
+    "fichier": "tests/svg/departements_650.svg",
+    "octets": 5432,
+    "sha256": "dda17e14c25c8a16104023cab5f4f585e099f5b15c980155b8470a9f8f174a89"
+  },
+  {
+    "fichier": "tests/svg/depistage_340.svg",
+    "octets": 4359,
+    "sha256": "13964ed860ed34da8181aa2e35477772be5757046111d863a75ec2e40a4c7f69"
+  },
+  {
+    "fichier": "tests/svg/depistage_650.svg",
+    "octets": 4425,
+    "sha256": "19f634e61e50dff4086c251a1e082bce396e4b3d61dcbb597a215cbaba01a11f"
+  },
+  {
+    "fichier": "tests/svg/lits_340.svg",
+    "octets": 10485,
+    "sha256": "9e8b38015b3f0689aef6cbd7e2f56efbaf634077be387f92cf2ce5c145af9c6c"
+  },
+  {
+    "fichier": "tests/svg/lits_650.svg",
+    "octets": 11665,
+    "sha256": "1af09cf85964acdbe177e8dd4ba55f1c4695091fea0172e30b5b2f30bf79f079"
+  },
+  {
+    "fichier": "tests/svg/offre_340.svg",
+    "octets": 5107,
+    "sha256": "33e29268c0f8c7e074c938344c5edebe02264a1b8fb100b46ea3a9174399d1f8"
+  },
+  {
+    "fichier": "tests/svg/offre_650.svg",
+    "octets": 5137,
+    "sha256": "271c6c8fe787757a0643edef72cd401f1ada8ac279eb257317f9ebf777fe7499"
+  }
+]

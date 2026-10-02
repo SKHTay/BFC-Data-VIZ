@@ -1,0 +1,54 @@
+{
+  "version": "5.0",
+  "date": "2026-10-02",
+  "donnees": {
+    "success": true,
+    "communes": 3685,
+    "ght": 11,
+    "mesures_offre": 24,
+    "faits_offre": 264,
+    "sites": 443,
+    "pauvrete_diffusee": 198,
+    "communes_cumul_3_15": 35,
+    "apl_region": 3.432890880168707,
+    "population_rp2023": 2802670,
+    "geometries_codes": "CONCORDANTS",
+    "non_testables": [
+      "partition_residence_GHT",
+      "population_GHT",
+      "public_MCO_exhaustif",
+      "parts_flux_100pct"
+    ]
+  },
+  "interactions": {
+    "success": true,
+    "mode": "DOM simulé ; calculs et événements exécutés, pas de navigateur réel",
+    "onglets": 5,
+    "communes": 3685,
+    "mesures_offre": 24,
+    "periodes_depistage": 9,
+    "maturite_non_renseignee": 33,
+    "tests": [
+      "filtres",
+      "export CSV Dijon",
+      "valeurs non diffusées",
+      "sélection vide",
+      "seuil zéro",
+      "24 mesures offre",
+      "composition GHT",
+      "9 périodes dépistage",
+      "corrélation paires complètes",
+      "sources",
+      "réinitialisation"
+    ],
+    "largeurs_svg": [
+      650,
+      340
+    ]
+  },
+  "verification_visuelle": {
+    "svg": "12 SVG produits à 650 et 340 pixels, inspection des cartes, nuages, barres, composition et dépistage ; correctif du fond transparent des barres appliqué.",
+    "html_navigateur_reel": "NON_EFFECTUEE : aucun navigateur local disponible ; téléchargement du navigateur non abouti.",
+    "limite": "La mise en page HTML complète et les comportements natifs mobile doivent être contrôlés après déploiement."
+  }
+}

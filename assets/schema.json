@@ -1,0 +1,18 @@
+{
+  "required": [
+    "version",
+    "ght",
+    "offre",
+    "departements",
+    "communes",
+    "sources"
+  ],
+  "empty_tables": [
+    "fait_flux",
+    "fait_maturite",
+    "ref_filiere",
+    "ref_codegeo_pmsi",
+    "fait_besoin",
+    "fait_cooperation"
+  ]
+}
